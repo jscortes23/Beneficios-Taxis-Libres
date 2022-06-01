@@ -1,0 +1,37 @@
+/* Font family */
+/* @supports (font-variation-settings: nrmal) {
+    @font-face {
+        font-family: Montserrat;
+        src: url('/css/font/Montserrat-Medium.ttf');
+    }
+} */
+
+/* Reset browser default style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Accessibility */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+/* Gobal variables */
+:root {
+    /* Palette colors */
+    --primary-color: #C4D239;
+    --font-color: #FFFFFF;
+    --link-color: #7A8DD1;
+    --shadow-color: #00000029;
+    --title-color: #1D2651;
+    --text-color: #1B1F3B;
+
+    /* Font sizes */
+    --lg-x: 4rem;
+    --lg: 2.6rem;
+    --md: 1.8rem;
+    --sm: 1.4rem;
+}
