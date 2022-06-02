@@ -1,10 +1,12 @@
 /* Font family */
-/* @supports (font-variation-settings: nrmal) {
+@supports (font-variation-settings: normal) {
     @font-face {
         font-family: Montserrat;
         src: url('/css/font/Montserrat-Medium.ttf');
+        font-weight: 100 1000;
+        font-stretch: 25% 151%;
     }
-} */
+}
 
 /* Reset browser default style */
 * {
@@ -30,8 +32,55 @@ body {
     --text-color: #1B1F3B;
 
     /* Font sizes */
-    --lg-x: 4rem;
+    --lg-x: 2rem;
     --lg: 2.6rem;
     --md: 1.8rem;
-    --sm: 1.4rem;
+    --sm: 1rem;
+}
+
+/* Make easier work with photos */
+picture, img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Section header */
+.header__container {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-image: url('/assets/imgs/fondo2x.png');
+    background-color: var(--primary-color);
+    background-position: 22% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__logo {
+    margin-top: 68px;
+    margin-bottom: 32px;
+}
+
+.header__title {
+    margin-bottom: 33px;
+    text-align: center;
+    letter-spacing: 0;
+    color: var(--title-color);
+    font-size: var(--lg-x);
+}
+
+.header__description {
+    text-align: center;
+    letter-spacing: 0;
+    color: var(--title-color);
+    font-size: var(--sm);
+}
+
+.header__img {
+    width: 90%;
+    position: absolute;
+    bottom: -13%;
 }
