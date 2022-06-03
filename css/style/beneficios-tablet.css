@@ -1,0 +1,16 @@
+.header__container {
+
+}
+
+.header__logo {
+
+}
+
+.header__img {
+    max-height: 600px;
+}
+
+.benefits__container {
+    flex-direction: row;
+    justify-content: center;    
+}
