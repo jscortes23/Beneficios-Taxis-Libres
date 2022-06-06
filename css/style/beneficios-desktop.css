@@ -5,3 +5,7 @@
 .header__description {
     width: 409px;
 }
+
+.header__img {
+    padding: 0;
+}
