@@ -102,6 +102,47 @@ picture, img {
     transform: translateX(-50%);
 }
 
+/* Section filter */
+.filter__container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 34px;
+}
+
+.filter__title {
+    text-align: center;
+    font-size: var(--lg);
+    margin-bottom: 8px;
+}
+
+.filter__container--scroll {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 24px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+}
+
+.filter__btn {
+    padding: 24px;
+    margin: 0 2px;
+    font-size: var(--md);
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    scroll-snap-align: center;
+    background-color: var(--font-color);
+    box-shadow: 2px 2px 12px var(--shadow-color);
+    cursor: pointer;
+}
+
+.filter__btn:hover, .filter__btn:active, .filter__btn:focus {
+    background-color: #C4D239;
+}
+
 /* Section benefits */
 .benefits__container {
     width: 100%;
