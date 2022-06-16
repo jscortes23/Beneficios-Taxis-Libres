@@ -9,3 +9,7 @@
 .header__img {
     padding: 0;
 }
+
+.benefits__container {
+    max-width: 730px;
+}
