@@ -196,3 +196,71 @@ picture, img {
     text-decoration: underline;
     color: rgb(20, 61, 211);
 }
+
+/* Section individual benefits */
+
+.benefit__container {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.benefit__container--img {
+    position: relative;
+    margin-bottom: 8vh;
+}
+
+.benefit__img {
+    height: 100px;
+}
+
+.benefit__title {
+    font-size: var(--lg-x);
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.benefit__content {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 6vh;
+    gap: 44px;
+    display: flex;
+    flex-flow: row wrap;
+    place-content: center;
+}
+
+.benefit__logo {
+    /* max-height: 100%; */
+}
+
+.benefit__info {
+    width: 70%;
+    font-size: var(--md);
+}
+
+.benefit--btn {
+    margin: 0 auto;
+    padding: 24px 12px;
+    font-weight: bold;
+    font-size: var(--md);
+    background-color: var(--primary-color);
+    color: black;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.benefit--btn__return {
+    padding: 12px;
+    position: absolute;
+    top: 8%;
+    left: 3%;
+    font-size: var(--lg);
+    color: black;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    text-decoration: none;
+}
