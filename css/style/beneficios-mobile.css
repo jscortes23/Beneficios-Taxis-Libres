@@ -151,7 +151,7 @@ picture, img {
     margin: 0 auto;
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 44px;
     margin-bottom: 44px;
 }
