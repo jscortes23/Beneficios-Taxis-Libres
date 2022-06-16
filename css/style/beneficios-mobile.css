@@ -147,8 +147,11 @@ picture, img {
 .benefits__container {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
+    padding: 0 12px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 44px;
     margin-bottom: 44px;
 }
@@ -162,7 +165,6 @@ picture, img {
 }
 
 .benefits__card {
-    
     max-width: 320px;
     min-height: 180px;
     padding: 24px;
