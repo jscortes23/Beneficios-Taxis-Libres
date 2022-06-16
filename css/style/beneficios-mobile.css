@@ -233,9 +233,9 @@ picture, img {
     place-content: center;
 }
 
-.benefit__logo {
-    /* max-height: 100%; */
-}
+/* .benefit__logo {
+    max-height: 100%;
+} */
 
 .benefit__info {
     width: 70%;
