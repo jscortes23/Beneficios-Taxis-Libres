@@ -207,22 +207,24 @@ picture, img {
     flex-direction: column;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 5vh;
 }
 
 .benefit__container--img {
+    width: 100%;
+    height: 40vh;
     position: relative;
     margin-bottom: 8vh;
-}
-
-.benefit__img {
-    height: 100px;
+    background-image: url(/assets/imgs/backgroung-benefits/poli-2x.png);
+    background-repeat: no-repeat;
+    background-position: 80% 0%;
+    background-size: cover;
 }
 
 .benefit__title {
     font-size: var(--lg-x);
     text-align: center;
-    margin-bottom: 10vh;
+    margin-bottom: 6vh;
 }
 
 .benefit__content {
@@ -235,9 +237,11 @@ picture, img {
     place-content: center;
 }
 
-/* .benefit__logo {
-    max-height: 100%;
-} */
+.benefit__logo {
+    max-height: 100px;
+    object-fit: contain;
+    align-self: center;
+}
 
 .benefit__info {
     width: 70%;
