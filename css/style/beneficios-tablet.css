@@ -34,3 +34,11 @@
     width: 80%;
     grid-template-columns: 1fr 1fr;
 }
+
+.benefit__container--img {
+    display: initial;
+}
+
+.benefit__title {
+    display: initial;
+}
