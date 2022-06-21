@@ -35,10 +35,6 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.benefit__container--modal {
-    /* height: auto; */
-}
-
 .benefit__container--img {
     display: initial;
     height: 0;
