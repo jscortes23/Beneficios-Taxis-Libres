@@ -35,10 +35,16 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.benefit__container--modal {
+    /* height: auto; */
+}
+
 .benefit__container--img {
     display: initial;
+    height: 0;
 }
 
 .benefit__title {
-    display: initial;
+    margin-top: 0;
+    margin-bottom: 2vh;
 }
