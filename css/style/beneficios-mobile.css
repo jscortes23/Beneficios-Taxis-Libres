@@ -18,7 +18,7 @@
 
 /* Accessibility */
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 62.5%;
 }
 
@@ -27,7 +27,7 @@ html {
     /* Palette colors */
     --primary-color: #C4D239;
     --font-color: #FFFFFF;
-    --link-color: #7A8DD1;
+    --link-color: #3f54a0;
     --shadow-color: #00000029;
     --title-color: #1D2651;
     --text-color: #1B1F3B;
@@ -43,6 +43,7 @@ html {
 picture, img {
     max-width: 100%;
     display: block;
+    aspect-ratio: attr(width)/attr(height);
 }
 
 /* Section header */
@@ -54,7 +55,7 @@ picture, img {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    background-image: url('/assets/imgs/fondo2x.png');
+    background-image: url('/assets/imgs/fondo2x.webp');
     background-color: var(--primary-color);
     background-position: 22% 0%;
     background-repeat: no-repeat;
@@ -156,20 +157,21 @@ picture, img {
     margin-bottom: 44px;
 }
 
-.benefits__column {
-    padding: 0 24px;
-    display: flex;
-    gap: 44px;
-    flex-flow: column wrap;
-    align-items: center; 
-}
-
 .benefits__card {
-    max-width: 320px;
+    max-width: 340px;
+    max-height: 350px;
     min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 24px;
     border-radius: 25px;
     box-shadow: 2px 2px 12px var(--shadow-color);
+}
+
+.benefits__card__title {
+    font-size: 2.2rem;
+    margin-bottom: 4px;
 }
 
 .benefits__card__img {
@@ -196,7 +198,7 @@ picture, img {
 
 .benefits__card__link:hover {
     text-decoration: underline;
-    color: rgb(20, 61, 211);
+    color: rgb(5, 54, 231);
 }
 
 /* Section individual benefits */

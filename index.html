@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beneficios | Taxis Libres</title>
-    <link rel="stylesheet" href="/css/style/beneficios-mobile.css" />
+    <link rel="preload" href="/css/font/Montserrat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/css/style/beneficios-mobile.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript> <link rel="stylesheet" href="/css/style/beneficios-mobile.css"></noscript>
     <link
       rel="stylesheet"
       href="/css/style/beneficios-tablet.css"
@@ -24,11 +26,12 @@
           <picture class="header__logo">
             <source
               media="(min-width: 769px)"
-              srcset="/assets/icons/logo-taxis-libres-2x.png"
+              srcset="/assets/icons/logo-taxis-libres-2x.webp"
             />
             <img
-              src="/assets/icons/logo-taxis-libres.png"
+              src="/assets/icons/logo-taxis-libres.webp"
               alt="Logo Taxis Libres"
+              loading="lazy"
             />
           </picture>
           <h1 class="header__title">Beneficios aliados Taxis Libres</h1>
@@ -40,12 +43,13 @@
         <picture class="header__img__container">
           <source
             media="(min-width: 420px)"
-            srcset="/assets/imgs/conductor-2x.png"
+            srcset="/assets/imgs/conductor-2x.webp"
           />
           <img
             class="header__img"
-            src="/assets/imgs/conductor.png"
+            src="/assets/imgs/conductor.webp"
             alt="Conductor de taxi dentro del carro"
+            loading="lazy"
           />
         </picture>
       </section>
@@ -57,12 +61,13 @@
           <button class="filter__btn">Bogota</button>
         </div>
       </section>
-      <section class="benefits__container">
+      <section class="benefits__container" id="benefits">
         <article class="benefits__card">
           <img
             class="benefits__card__img"
-            src="/assets/imgs/poli.png"
+            src="/assets/imgs/poli.webp"
             alt="Logo Politécnico Gran Colombiano"
+            loading="lazy"
           />
           <p class="benefits__card__description">
             Invierte en tu futuro profesional con los descuentos del POLI.
@@ -72,8 +77,9 @@
         <article class="benefits__card">
           <img
             class="benefits__card__img"
-            src="/assets/imgs/popsy.png"
+            src="/assets/imgs/popsy.webp"
             alt="Logo Helados Popsy"
+            loading="lazy"
           />
           <p class="benefits__card__description">
             Recibe descuentos en heladerías Popsy a nivel nacional.
@@ -83,8 +89,9 @@
         <article class="benefits__card">
           <img
             class="benefits__card__img"
-            src="/assets/imgs/lobi.png"
+            src="/assets/imgs/lobi.webp"
             alt="Logo Lobi Car"
+            loading="lazy"
           />
           <p class="benefits__card__description">
             Descuentos en varios cambios de aceite de tu vehículo.
@@ -94,8 +101,9 @@
         <article class="benefits__card">
           <img
             class="benefits__card__img"
-            src="/assets/imgs/logo-lobimotos.png"
+            src="/assets/imgs/logo-lobimotos.webp"
             alt="Logo Lobi Motos"
+            loading="lazy"
           />
           <p class="benefits__card__description">
             Compra la moto de tus sueños con los descuentos de Lobi Motos.
@@ -105,9 +113,11 @@
         <article class="benefits__card">
           <img
             class="benefits__card__img"
-            src="/assets/imgs/factura.png"
+            src="/assets/imgs/factura.webp"
             alt="Icono de documento"
+            loading="lazy"
           />
+          <h3 class="benefits__card__title">Descuento en multas</h3>
           <p class="benefits__card__description">
             Accede a un 50% de descuento en tu comparendo con Viacol.
           </p>
@@ -118,9 +128,11 @@
         <article class="benefits__card">
           <img
             class="benefits__card__img"
-            src="/assets/imgs/carro.png"
+            src="/assets/imgs/induccion.webp"
             alt="Icono formación e inducción Taxis Libres"
+            loading="lazy"
           />
+          <h3 class="benefits__card__title">Inducción y Formación</h3>
           <p class="benefits__card__description">
             Certifícate con nuestros cursos virtuales y presenciales.
           </p>
@@ -129,8 +141,9 @@
         <article class="benefits__card">
           <img
             class="benefits__card__img"
-            src="/assets/imgs/ayenda.png"
+            src="/assets/imgs/ayenda.webp"
             alt="Logo Ayenda"
+            loading="lazy"
           />
           <p class="benefits__card__description">
             Hospédate en hoteles Ayenda y recibe el 10% de descuento.
@@ -140,21 +153,23 @@
       </section>
       <section class="modals__container">
         <article class="benefit__container" id="modalPoli">
-          <a class="benefit--btn__return" href="#">X</a>
+          <a class="benefit--btn__return" href="#benefits">X</a>
           <section class="benefit__container--modal">
             <div class="benefit__container--img">
               <img
                 class="benefit--img__background"
-                src="/assets/imgs/backgroung-benefits/poli-2x.png"
+                src="/assets/imgs/backgroung-benefits/poli-2x.webp"
                 alt="Joven estudiante mujer sonriendo"
+                loading="lazy"
               />
             </div>
             <h1 class="benefit__title">Poli</h1>
             <div class="benefit__content">
               <img
                 class="benefit__logo"
-                src="/assets/imgs/poli.png"
+                src="/assets/imgs/poli.webp"
                 alt="Logo Politécnico Gran Colombiano"
+                loading="lazy"
               />
               <p class="benefit__info">
                 Nos unimos con el Politécnico Grancolombiano para ofrecerte un
@@ -177,21 +192,23 @@
           </section>
         </article>
         <article class="benefit__container" id="modalPopsy">
-          <a class="benefit--btn__return" href="#">X</a>
+          <a class="benefit--btn__return" href="#benefits">X</a>
           <section class="benefit__container--modal">
             <div class="benefit__container--img">
               <img
                 class="benefit--img__background"
-                src="/assets/imgs/backgroung-benefits/popsy-2x.png"
+                src="/assets/imgs/backgroung-benefits/popsy-2x.webp"
                 alt="Helados Popsy vanilla"
+                loading="lazy"
               />
             </div>
             <h1 class="benefit__title">Popsy</h1>
             <div class="benefit__content">
               <img
                 class="benefit__logo"
-                src="/assets/imgs/popsy.png"
+                src="/assets/imgs/popsy.webp"
                 alt="Logo Helados Popsy"
+                loading="lazy"
               />
               <p class="benefit__info">
                 Presenta las imágenes con el código de cliente en las cajas y
@@ -217,21 +234,23 @@
           </section>
         </article>
         <article class="benefit__container" id="modalLobiCar">
-          <a class="benefit--btn__return" href="#">X</a>
+          <a class="benefit--btn__return" href="#benefits">X</a>
           <section class="benefit__container--modal">
             <div class="benefit__container--img">
               <img
                 class="benefit--img__background"
-                src="/assets/imgs/backgroung-benefits/lobi-car-2x.png"
+                src="/assets/imgs/backgroung-benefits/lobi-car-2x.webp"
                 alt="Mecánico arreglando un carro en un taller"
+                loading="lazy"
               />
             </div>
             <h1 class="benefit__title">Lobi Car</h1>
             <div class="benefit__content">
               <img
                 class="benefit__logo"
-                src="/assets/imgs/lobi.png"
+                src="/assets/imgs/lobi.webp"
                 alt="Logo Lobi Car"
+                loading="lazy"
               />
               <p class="benefit__info">
                 Sabemos que el cambio de aceite es un servicio que se realiza
@@ -259,21 +278,23 @@
           </section>
         </article>
         <article class="benefit__container" id="modalLobiMotos">
-          <a class="benefit--btn__return" href="#">X</a>
+          <a class="benefit--btn__return" href="#benefits">X</a>
           <section class="benefit__container--modal">
             <div class="benefit__container--img">
               <img
                 class="benefit--img__background"
-                src="/assets/imgs/backgroung-benefits/lobi-motos-2x.png"
+                src="/assets/imgs/backgroung-benefits/lobi-motos-2x.webp"
                 alt="Dominar 400 verde y negra"
+                loading="lazy"
               />
             </div>
             <h1 class="benefit__title">Lobi Motos</h1>
             <div class="benefit__content">
               <img
                 class="benefit__logo"
-                src="/assets/imgs/logo-lobimotos.png"
+                src="/assets/imgs/logo-lobimotos.webp"
                 alt="Logo Lobi Motos"
+                loading="lazy"
               />
               <p class="benefit__info">
                 Obtén <b>$200.000 de descuento</b> en la compra de referencias
@@ -296,21 +317,23 @@
           </section>
         </article>
         <article class="benefit__container" id="modalDescuentoMultas">
-          <a class="benefit--btn__return" href="#">X</a>
+          <a class="benefit--btn__return" href="#benefits">X</a>
           <section class="benefit__container--modal">
             <div class="benefit__container--img">
               <img
                 class="benefit--img__background"
-                src="/assets/imgs/backgroung-benefits/descuento-multas-2x.png"
+                src="/assets/imgs/backgroung-benefits/descuento-multas-2x.webp"
                 alt="Conductor frente a un taxi"
+                loading="lazy"
               />
             </div>
             <h1 class="benefit__title">Descuento en multas</h1>
             <div class="benefit__content">
               <img
                 class="benefit__logo"
-                src="/assets/imgs/factura.png"
+                src="/assets/imgs/factura.webp"
                 alt="Icono de documento"
+                loading="lazy"
               />
               <p class="benefit__info">
                 Agenda el curso pedagógico y recibe un descuento para pagar tu
@@ -341,21 +364,23 @@
           </section>
         </article>
         <article class="benefit__container" id="modalFormacion">
-          <a class="benefit--btn__return" href="#">X</a>
+          <a class="benefit--btn__return" href="#benefits">X</a>
           <section class="benefit__container--modal">
             <div class="benefit__container--img">
               <img
                 class="benefit--img__background"
-                src="/assets/imgs/backgroung-benefits/formacion-2x.png"
-                alt="Dominar 400 verde y negra"
+                src="/assets/imgs/backgroung-benefits/formacion-2x.webp"
+                alt="Persona dictando clase en un auditorio Centro Comercial Carrera Bogotá"
+                loading="lazy"
               />
             </div>
             <h1 class="benefit__title">Formación e inducción</h1>
             <div class="benefit__content">
               <img
                 class="benefit__logo"
-                src="/assets/imgs/carro.png"
-                alt="Persona dictando clase en un auditorio Centro Comercial Carrera Bogotá"
+                src="/assets/imgs/induccion.webp"
+                alt="Icono formación e inducción Taxis Libres"
+                loading="lazy"
               />
               <p class="benefit__info">
                 Nos interesa que las personas que están tras el volante sean
@@ -392,21 +417,23 @@
           </section>
         </article>
         <article class="benefit__container" id="modalAyenda">
-          <a class="benefit--btn__return" href="#">X</a>
+          <a class="benefit--btn__return" href="#benefits">X</a>
           <section class="benefit__container--modal">
             <div class="benefit__container--img">
               <img
                 class="benefit--img__background"
-                src="/assets/imgs/backgroung-benefits/formacion-2x.png"
+                src="/assets/imgs/backgroung-benefits/ayenda-2x.webp"
                 alt="Dominar 400 verde y negra"
+                loading="lazy"
               />
             </div>
             <h1 class="benefit__title">Ayenda</h1>
             <div class="benefit__content">
               <img
                 class="benefit__logo"
-                src="/assets/imgs/ayenda.png"
+                src="/assets/imgs/ayenda.webp"
                 alt="Logo Ayenda"
+                loading="lazy"
               />
               <p class="benefit__info">
                 Recibe el 10% de descuento en hoteles con Ayenda ingresando el cupón AYENDATL2022 en el check out.
