@@ -127,6 +127,10 @@ picture, img {
     overflow-y: hidden;
 }
 
+input[type="radio"] {
+    display: none;
+}
+
 .filter__btn {
     padding: 24px;
     margin: 0 2px;
@@ -140,7 +144,7 @@ picture, img {
     cursor: pointer;
 }
 
-.filter__btn:hover, .filter__btn:active, .filter__btn:focus {
+.filter__btn:hover, .filter__btn:active, .filter__btn:focus, input[type="radio"]:checked {
     background-color: #C4D239;
 }
 
@@ -319,4 +323,7 @@ picture, img {
     content: "";
 }
 
-
+/* Filter */
+[value="bogota"]:checked ~ .benefits__container .benefits__card:not([data-cities~="bogota"]), [value="cali"]:checked ~ .benefits__container .benefits__card:not([data-cities~="cali"]){
+    display: none;
+}

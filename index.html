@@ -5,9 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beneficios | Taxis Libres</title>
-    <link rel="preload" href="/css/font/Montserrat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="/css/style/beneficios-mobile.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-    <noscript> <link rel="stylesheet" href="/css/style/beneficios-mobile.css"></noscript>
+    <link
+      rel="preload"
+      href="/css/font/Montserrat-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/css/style/beneficios-mobile.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/css/style/beneficios-mobile.css"
+    /></noscript>
     <link
       rel="stylesheet"
       href="/css/style/beneficios-tablet.css"
@@ -56,13 +69,16 @@
       <section class="filter__container">
         <h2 class="filter__title">Beneficios por cuidad:</h2>
         <div class="filter__container--scroll">
-          <button class="filter__btn">Todos</button>
-          <button class="filter__btn">Cali</button>
-          <button class="filter__btn">Bogota</button>
+          <label class="filter__btn" for="all">Todos</label>
+          <label class="filter__btn" for="bogota">Bogota</label>
+          <label class="filter__btn" for="cali">Cali</label>
         </div>
       </section>
+      <input type="radio" name="cities" id="all" value="all" checked />
+      <input type="radio" name="cities" id="bogota" value="bogota" />
+      <input type="radio" name="cities" id="cali" value="cali" />
       <section class="benefits__container" id="benefits">
-        <article class="benefits__card">
+        <article class="benefits__card" data-cities="cali">
           <img
             class="benefits__card__img"
             src="/assets/imgs/poli.webp"
@@ -74,7 +90,7 @@
           </p>
           <a class="benefits__card__link" href="#modalPoli">Ver más...</a>
         </article>
-        <article class="benefits__card">
+        <article class="benefits__card" data-cities="cali">
           <img
             class="benefits__card__img"
             src="/assets/imgs/popsy.webp"
@@ -86,7 +102,7 @@
           </p>
           <a class="benefits__card__link" href="#modalPopsy">Ver más...</a>
         </article>
-        <article class="benefits__card">
+        <article class="benefits__card" data-cities="cali">
           <img
             class="benefits__card__img"
             src="/assets/imgs/lobi.webp"
@@ -98,7 +114,7 @@
           </p>
           <a class="benefits__card__link" href="#modalLobiCar">Ver más...</a>
         </article>
-        <article class="benefits__card">
+        <article class="benefits__card" data-cities="cali">
           <img
             class="benefits__card__img"
             src="/assets/imgs/logo-lobimotos.webp"
@@ -110,7 +126,7 @@
           </p>
           <a class="benefits__card__link" href="#modalLobiMotos">Ver más...</a>
         </article>
-        <article class="benefits__card">
+        <article class="benefits__card" data-cities="bogota">
           <img
             class="benefits__card__img"
             src="/assets/imgs/factura.webp"
@@ -125,7 +141,7 @@
             >Ver más...</a
           >
         </article>
-        <article class="benefits__card">
+        <article class="benefits__card" data-cities="bogota">
           <img
             class="benefits__card__img"
             src="/assets/imgs/induccion.webp"
@@ -138,7 +154,7 @@
           </p>
           <a class="benefits__card__link" href="#modalFormacion">Ver más...</a>
         </article>
-        <article class="benefits__card">
+        <article class="benefits__card" data-cities="bogota">
           <img
             class="benefits__card__img"
             src="/assets/imgs/ayenda.webp"
@@ -436,7 +452,8 @@
                 loading="lazy"
               />
               <p class="benefit__info">
-                Recibe el 10% de descuento en hoteles con Ayenda ingresando el cupón AYENDATL2022 en el check out.
+                Recibe el 10% de descuento en hoteles con Ayenda ingresando el
+                cupón AYENDATL2022 en el check out.
                 <br />
                 <br />
                 - Válido hasta el 31 de diciembre de 2022
