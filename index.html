@@ -44,7 +44,6 @@
             <img
               src="/assets/icons/logo-taxis-libres.webp"
               alt="Logo Taxis Libres"
-              loading="lazy"
             />
           </picture>
           <h1 class="header__title">Beneficios aliados Taxis Libres</h1>
@@ -62,20 +61,17 @@
             class="header__img"
             src="/assets/imgs/conductor.webp"
             alt="Conductor de taxi dentro del carro"
-            loading="lazy"
           />
         </picture>
       </section>
       <section class="filter__container">
         <h2 class="filter__title">Beneficios por cuidad:</h2>
-        <div class="filter__container--scroll">
-          <label class="filter__btn" for="all">Todos</label>
-          <label class="filter__btn" for="bogota">Bogotá</label>
-          <label class="filter__btn" for="cali">Cali</label>
+        <div class="filter__container--scroll" id="select">
+          <label class="filter__btn" id="b" for="bogota">Bogotá</label>
+          <label class="filter__btn" id="c" for="cali">Cali</label>
         </div>
       </section>
-      <input type="radio" name="cities" id="all" value="all" checked />
-      <input type="radio" name="cities" id="bogota" value="bogota" />
+      <input type="radio" name="cities" id="bogota" value="bogota" checked/>
       <input type="radio" name="cities" id="cali" value="cali" />
       <section class="benefits__container" id="benefits">
         <article class="benefits__card" data-cities="bogota">
@@ -86,22 +82,11 @@
             loading="lazy"
           />
           <p class="benefits__card__description">
-            Invierte en tu futuro profesional con los descuentos del POLI.
+            Obtén 15% de descuento en pregrados y posgrados del Poli.
           </p>
           <a class="benefits__card__link" href="#modalPoli">Ver más...</a>
         </article>
-        <article class="benefits__card" data-cities="bogota">
-          <img
-            class="benefits__card__img"
-            src="/assets/imgs/popsy.webp"
-            alt="Logo Helados Popsy"
-            loading="lazy"
-          />
-          <p class="benefits__card__description">
-            Recibe descuentos en heladerías Popsy a nivel nacional.
-          </p>
-          <a class="benefits__card__link" href="#modalPopsy">Ver más...</a>
-        </article>
+
         <article class="benefits__card" data-cities="bogota">
           <img
             class="benefits__card__img"
@@ -110,7 +95,7 @@
             loading="lazy"
           />
           <p class="benefits__card__description">
-            Descuentos en varios cambios de aceite de tu vehículo.
+            25% y 50% de descuento en varios cambios de aceite de tu vehículo.
           </p>
           <a class="benefits__card__link" href="#modalLobiCar">Ver más...</a>
         </article>
@@ -122,18 +107,32 @@
             loading="lazy"
           />
           <p class="benefits__card__description">
-            Compra la moto de tus sueños con los descuentos de Lobi Motos.
+            Obtén $200.000 de descuento en referencias Boxer, Discover y Pulsar.
           </p>
           <a class="benefits__card__link" href="#modalLobiMotos">Ver más...</a>
+        </article>
+        <article class="benefits__card" data-cities="bogota cali">
+          <img
+            class="benefits__card__img"
+            src="/assets/imgs/redbus.webp"
+            alt="redBus logo"
+            loading="lazy"
+          />
+          <p class="benefits__card__description">
+            Viaja en bus con redBus y recibe el 10% de descuento.
+          </p>
+          <a class="benefits__card__link" href="#modalRedBus"
+            >Ver más...</a
+          >
         </article>
         <article class="benefits__card" data-cities="bogota">
           <img
             class="benefits__card__img"
-            src="/assets/imgs/factura.webp"
-            alt="Icono de documento"
+            src="/assets/imgs/viacol.webp"
+            alt="Logo Viacol"
             loading="lazy"
           />
-          <h3 class="benefits__card__title">Descuento en multas</h3>
+          <h3 class="benefits__card__title">Descuento en multas - Viacol</h3>
           <p class="benefits__card__description">
             Accede a un 50% de descuento en tu comparendo con Viacol.
           </p>
@@ -144,17 +143,17 @@
         <article class="benefits__card" data-cities="bogota">
           <img
             class="benefits__card__img"
-            src="/assets/imgs/induccion.webp"
-            alt="Icono formación e inducción Taxis Libres"
+            src="/assets/imgs/taxis-libres.webp"
+            alt="Logo Taxis Libres"
             loading="lazy"
           />
-          <h3 class="benefits__card__title">Inducción y Formación</h3>
+          <h3 class="benefits__card__title">Inducción y Formación - Taxis Libres</h3>
           <p class="benefits__card__description">
             Certifícate con nuestros cursos virtuales y presenciales.
           </p>
           <a class="benefits__card__link" href="#modalFormacion">Ver más...</a>
         </article>
-        <article class="benefits__card" data-cities="bogota">
+        <article class="benefits__card" data-cities="bogota cali">
           <img
             class="benefits__card__img"
             src="/assets/imgs/ayenda.webp"
@@ -174,7 +173,7 @@
             loading="lazy"
           />
           <p class="benefits__card__description">
-            Es momento de cuidar tu salud dental con Ortho Smile.
+            10% y 5% de descuento para ti y tu familia en Ortho Smile.
           </p>
           <a class="benefits__card__link" href="#modalOrthoSmile">Ver más...</a>
         </article>
@@ -186,7 +185,7 @@
             loading="lazy"
           />
           <p class="benefits__card__description">
-            Disfruta una noche de rumba en lo mejor de la Av. Roosevelt.
+            Entrada y caneca gratis para ti y tus amigos en Club Tao.
           </p>
           <a class="benefits__card__link" href="#modalClubTao">Ver más...</a>
         </article>
@@ -198,7 +197,7 @@
             loading="lazy"
           />
           <p class="benefits__card__description">
-            Recibe descuentos en una de las mejores salchipapas de Cali.
+            Obtén el 5% de descuento en una de las mejores salchipapas de Cali.
           </p>
           <a class="benefits__card__link" href="#modalDondeDavid">Ver más...</a>
         </article>
@@ -210,7 +209,7 @@
             loading="lazy"
           />
           <p class="benefits__card__description">
-            Compra ropa para ti y tu familia con los descuentos de Herpo.
+            Accede a un 5% de descuento en ropa para ti y tu familia.
           </p>
           <a class="benefits__card__link" href="#modalHerpo">Ver más...</a>
         </article>
@@ -222,7 +221,7 @@
             loading="lazy"
           />
           <p class="benefits__card__description">
-            Hazte tus exámenes médicos al mejor precio con SYNLAB.
+            Hazte tus exámenes médicos hasta con el 30% descuento en SYNLAB.
           </p>
           <a class="benefits__card__link" href="#modalSynLab">Ver más...</a>
         </article>
@@ -234,13 +233,13 @@
             loading="lazy"
           />
           <p class="benefits__card__description">
-            Es hora de iniciar tus estudios universitarios con Unicatólica.
+            10% de descuento en la matrícula para ti y tu familia con Unicatólica.
           </p>
           <a class="benefits__card__link" href="#modalUnicatolica"
             >Ver más...</a
           >
         </article>
-        <article class="benefits__card" data-cities="cali">
+        <article class="benefits__card" data-cities="cali bogota">
           <img
             class="benefits__card__img"
             src="/assets/imgs/popsy.webp"
@@ -248,7 +247,7 @@
             loading="lazy"
           />
           <p class="benefits__card__description">
-            Recibe descuentos en heladerías Popsy a nivel nacional.
+            Compra malteadas o maxiconos y recibe el 20% de descuento.
           </p>
           <a class="benefits__card__link" href="#modalPopsy">Ver más...</a>
         </article>
@@ -478,23 +477,60 @@
             >
           </section>
         </article>
+        <article class="benefit__container" id="modalRedBus">
+          <a class="benefit--btn__return" href="#benefits">X</a>
+          <section class="benefit__container--modal">
+            <div class="benefit__container--img">
+              <img
+                class="benefit--img__background"
+                src="/assets/imgs/backgroung-benefits/redbus-2x.webp"
+                alt="Hombre subiendo a un bus"
+                loading="lazy"
+              />
+            </div>
+            <h1 class="benefit__title">RedBus</h1>
+            <div class="benefit__content">
+              <img
+                class="benefit__logo"
+                src="/assets/imgs/redbus.webp"
+                alt="redBus logo"
+                loading="lazy"
+              />
+              <p class="benefit__info">
+                Recibe el 10% de descuento en tus pasajes ingresando el cupón <b>RBYTL10</b> en el momento de hacer la compra.
+                <br />
+                <br />
+                - Válido hasta el 31 de diciembre de 2022
+                <br />
+                - Solo para compras desde el app de redBus.
+              </p>
+            </div>
+            <a
+              class="benefit--btn"
+              href="https://drive.google.com/file/d/1PjNX6TYpFRo8dB_fKsN_4uTZPz7lqyFd/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Obtener información</a
+            >
+          </section>
+        </article>
         <article class="benefit__container" id="modalDescuentoMultas">
           <a class="benefit--btn__return" href="#benefits">X</a>
           <section class="benefit__container--modal">
             <div class="benefit__container--img">
               <img
                 class="benefit--img__background"
-                src="/assets/imgs/backgroung-benefits/descuento-multas-2x.webp"
+                src="/assets/imgs/backgroung-benefits/viacol-2x.webp"
                 alt="Conductor frente a un taxi"
                 loading="lazy"
               />
             </div>
-            <h1 class="benefit__title">Descuento en multas</h1>
+            <h1 class="benefit__title">Descuento en multas - Viacol</h1>
             <div class="benefit__content">
               <img
                 class="benefit__logo"
-                src="/assets/imgs/factura.webp"
-                alt="Icono de documento"
+                src="/assets/imgs/viacol.webp"
+                alt="Logo Viacol"
                 loading="lazy"
               />
               <p class="benefit__info">
@@ -536,12 +572,12 @@
                 loading="lazy"
               />
             </div>
-            <h1 class="benefit__title">Formación e inducción</h1>
+            <h1 class="benefit__title">Formación e inducción - Taxis Libres</h1>
             <div class="benefit__content">
               <img
                 class="benefit__logo"
-                src="/assets/imgs/induccion.webp"
-                alt="Icono formación e inducción Taxis Libres"
+                src="/assets/imgs/taxis-libres.webp"
+                alt="Logo Taxis Libres"
                 loading="lazy"
               />
               <p class="benefit__info">
@@ -803,5 +839,18 @@
         </article>
       </section>
     </main>
+    <script>
+      document.getElementById("b").style.background="#C4D239";
+      document.addEventListener('click', () =>{
+        var elementoActivo = document.querySelector('input[name="cities"]:checked');
+        if (elementoActivo.value === "bogota") {
+          document.getElementById("b").style.background="#C4D239";
+          document.getElementById("c").style.background="#FFFFFF";
+        } else {
+          document.getElementById("c").style.background="#C4D239";
+          document.getElementById("b").style.background="#FFFFFF";
+        }
+      });
+    </script>
   </body>
 </html>

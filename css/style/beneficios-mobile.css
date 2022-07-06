@@ -162,8 +162,8 @@ input[type="radio"] {
 }
 
 .benefits__card {
+    height: 100%;
     max-width: 340px;
-    max-height: 350px;
     min-height: 180px;
     display: flex;
     flex-direction: column;
