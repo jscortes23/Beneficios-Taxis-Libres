@@ -69,12 +69,23 @@
         <div class="filter__container--scroll" id="select">
           <label class="filter__btn" id="b" for="bogota">Bogotá</label>
           <label class="filter__btn" id="c" for="cali">Cali</label>
+          <label class="filter__btn" id="m" for="medellin">Medellín</label>
+          <label class="filter__btn" id="cu" for="cucuta">Cúcuta</label>
+          <label class="filter__btn" id="bu" for="bucaramanga"
+            >Bucaramanga</label
+          >
         </div>
       </section>
-      <input type="radio" name="cities" id="bogota" value="bogota" checked/>
+      <input type="radio" name="cities" id="bogota" value="bogota" checked />
       <input type="radio" name="cities" id="cali" value="cali" />
+      <input type="radio" name="cities" id="medellin" value="medellin" />
+      <input type="radio" name="cities" id="cucuta" value="cucuta" />
+      <input type="radio" name="cities" id="bucaramanga" value="bucaramanga" />
       <section class="benefits__container" id="benefits">
-        <article class="benefits__card" data-cities="bogota">
+        <article
+          class="benefits__card"
+          data-cities="bogota medellin cucuta bucaramanga"
+        >
           <img
             class="benefits__card__img"
             src="/assets/imgs/poli.webp"
@@ -86,7 +97,6 @@
           </p>
           <a class="benefits__card__link" href="#modalPoli">Ver más...</a>
         </article>
-
         <article class="benefits__card" data-cities="bogota">
           <img
             class="benefits__card__img"
@@ -111,7 +121,10 @@
           </p>
           <a class="benefits__card__link" href="#modalLobiMotos">Ver más...</a>
         </article>
-        <article class="benefits__card" data-cities="bogota cali">
+        <article
+          class="benefits__card"
+          data-cities="bogota cali medellin cucuta bucaramanga"
+        >
           <img
             class="benefits__card__img"
             src="/assets/imgs/redbus.webp"
@@ -121,9 +134,7 @@
           <p class="benefits__card__description">
             Compra tus pasajes con redBus y recibe el 10% de descuento.
           </p>
-          <a class="benefits__card__link" href="#modalRedBus"
-            >Ver más...</a
-          >
+          <a class="benefits__card__link" href="#modalRedBus">Ver más...</a>
         </article>
         <article class="benefits__card" data-cities="bogota">
           <img
@@ -151,7 +162,10 @@
           </p>
           <a class="benefits__card__link" href="#modalFormacion">Ver más...</a>
         </article>
-        <article class="benefits__card" data-cities="bogota cali">
+        <article
+          class="benefits__card"
+          data-cities="bogota cali medellin cucuta bucaramanga"
+        >
           <img
             class="benefits__card__img"
             src="/assets/imgs/ayenda.webp"
@@ -231,13 +245,17 @@
             loading="lazy"
           />
           <p class="benefits__card__description">
-            10% de descuento en la matrícula para ti y tu familia con Unicatólica.
+            10% de descuento en la matrícula para ti y tu familia con
+            Unicatólica.
           </p>
           <a class="benefits__card__link" href="#modalUnicatolica"
             >Ver más...</a
           >
         </article>
-        <article class="benefits__card" data-cities="cali bogota">
+        <article
+          class="benefits__card"
+          data-cities="cali bogota medellin cucuta bucaramanga"
+        >
           <img
             class="benefits__card__img"
             src="/assets/imgs/popsy.webp"
@@ -495,17 +513,26 @@
                 loading="lazy"
               />
               <p class="benefit__info">
-                Recibe el 10% de descuento en tus pasajes ingresando el cupón <b>RBYTL10</b> en el momento de hacer la compra.
+                Recibe el 10% de descuento en tus pasajes ingresando el cupón
+                <b>RBYTL10</b> en el momento de hacer la compra.
                 <br />
                 <br />
                 - Válido hasta el 31 de diciembre de 2022
                 <br />
                 - Solo para compras desde el app de redBus.
+                <br />
+                <br />
+                <a
+                  href="https://drive.google.com/file/d/1PjNX6TYpFRo8dB_fKsN_4uTZPz7lqyFd/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Términos y condiciones</a
+                >
               </p>
             </div>
             <a
               class="benefit--btn"
-              href="https://drive.google.com/file/d/1PjNX6TYpFRo8dB_fKsN_4uTZPz7lqyFd/view"
+              href="https://www.redbus.co/"
               target="_blank"
               rel="noopener noreferrer"
               >Obtener información</a
@@ -641,14 +668,22 @@
                 - Aplica en todos los hoteles Ayenda.
                 <br />
                 - No acumulable con otras promociones.
+                <br />
+                <br />
+                <a
+                  href="https://drive.google.com/file/d/1PjNX6TYpFRo8dB_fKsN_4uTZPz7lqyFd/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Términos y condiciones</a
+                >
               </p>
             </div>
             <a
               class="benefit--btn"
-              href="https://drive.google.com/file/d/1PjNX6TYpFRo8dB_fKsN_4uTZPz7lqyFd/view"
+              href="https://ayenda.com/"
               target="_blank"
               rel="noopener noreferrer"
-              >Más información</a
+              >Ir</a
             >
           </section>
         </article>
@@ -742,13 +777,14 @@
                 Recibe el 10% de descuento y el 5% para tu circulo familiar.
                 <br />
                 <br />
-                Acércate a la sede del barrio Villa Colombia o Santa Helena y muestra tu tarjetón al día para redimir el descuento.
-                <br>
-                <br>
+                Acércate a la sede del barrio Villa Colombia o Santa Helena y
+                muestra tu tarjetón al día para redimir el descuento.
+                <br />
+                <br />
                 📍 Cra.28 #16-42, B/Santa Helena
               </p>
             </div>
-            <a class="benefit--btn" href="tel:+573108391099">📞 Más información</a>
+            <a class="benefit--btn" href="tel:+573108391099">📞 Llamar</a>
           </section>
         </article>
         <article class="benefit__container" id="modalClubTao">
@@ -771,16 +807,21 @@
                 loading="lazy"
               />
               <p class="benefit__info">
-                ¡Donde temrina la Roosevelt comienza la diversión! Recibe una <b>entrada gratis</b> para ti y tu grupo de amigos (mayor a sies personas) y <b>reclama una caneca sin ningún costo</b>, posterior a la compra de una botella.
+                ¡Donde termina la Roosevelt comienza la diversión! Recibe una
+                <b>entrada gratis</b> para ti y tu grupo de amigos (mayor a sies
+                personas) y <b>reclama una caneca sin ningún costo</b>,
+                posterior a la compra de una botella.
                 <br />
                 <br />
-                Muestra tu tarjetón al día y reclama tu cortesia en el CLUB TAO.
-                <br>
-                <br>
+                Muestra tu tarjetón al día y reclama tu cortesía en el CLUB TAO.
+                <br />
+                <br />
                 📍 Av. Roosevelt #24-69, B/San Fernando
               </p>
             </div>
-            <a class="benefit--btn" href="tel:+573163390367">📞 Más información</a>
+            <a class="benefit--btn" href="tel:+573163390367"
+              >📞 Más información</a
+            >
           </section>
         </article>
         <article class="benefit__container" id="modalHerpo">
@@ -803,10 +844,13 @@
                 loading="lazy"
               />
               <p class="benefit__info">
-                Obtén 5% de descuento comprando en efectivo en todos los almacenes Herpo de la ciudad de Cali.
+                Obtén 5% de descuento comprando en efectivo en todos los
+                almacenes Herpo de la ciudad de Cali.
               </p>
             </div>
-            <a class="benefit--btn" href="tel:+573226389166">📞 Obtener descuento</a>
+            <a class="benefit--btn" href="tel:+573226389166"
+              >📞 Obtener descuento</a
+            >
           </section>
         </article>
         <article class="benefit__container" id="modalSynLab">
@@ -832,21 +876,49 @@
                 Hasta el 30% de descuento en los examenes.
               </p>
             </div>
-            <a class="benefit--btn" href="tel:+57316297822">📞 Obtener descuento</a>
+            <a class="benefit--btn" href="tel:+57316297822"
+              >📞 Obtener descuento</a
+            >
           </section>
         </article>
       </section>
     </main>
     <script>
-      document.getElementById("b").style.background="#C4D239";
-      document.addEventListener('click', () =>{
-        var elementoActivo = document.querySelector('input[name="cities"]:checked');
+      document.getElementById("b").style.background = "#C4D239";
+      document.addEventListener("click", () => {
+        var elementoActivo = document.querySelector(
+          'input[name="cities"]:checked'
+        );
         if (elementoActivo.value === "bogota") {
-          document.getElementById("b").style.background="#C4D239";
-          document.getElementById("c").style.background="#FFFFFF";
+          document.getElementById("b").style.background = "#C4D239";
+          document.getElementById("c").style.background = "#FFFFFF";
+          document.getElementById("m").style.background = "#FFFFFF";
+          document.getElementById("cu").style.background = "#FFFFFF";
+          document.getElementById("bu").style.background = "#FFFFFF";
+        } else if (elementoActivo.value === "cali") {
+          document.getElementById("c").style.background = "#C4D239";
+          document.getElementById("b").style.background = "#FFFFFF";
+          document.getElementById("m").style.background = "#FFFFFF";
+          document.getElementById("cu").style.background = "#FFFFFF";
+          document.getElementById("bu").style.background = "#FFFFFF";
+        } else if (elementoActivo.value === "medellin") {
+          document.getElementById("m").style.background = "#C4D239";
+          document.getElementById("b").style.background = "#FFFFFF";
+          document.getElementById("c").style.background = "#FFFFFF";
+          document.getElementById("cu").style.background = "#FFFFFF";
+          document.getElementById("bu").style.background = "#FFFFFF";
+        } else if (elementoActivo.value === "cucuta") {
+          document.getElementById("cu").style.background = "#C4D239";
+          document.getElementById("b").style.background = "#FFFFFF";
+          document.getElementById("c").style.background = "#FFFFFF";
+          document.getElementById("m").style.background = "#FFFFFF";
+          document.getElementById("bu").style.background = "#FFFFFF";
         } else {
-          document.getElementById("c").style.background="#C4D239";
-          document.getElementById("b").style.background="#FFFFFF";
+          document.getElementById("bu").style.background = "#C4D239";
+          document.getElementById("b").style.background = "#FFFFFF";
+          document.getElementById("c").style.background = "#FFFFFF";
+          document.getElementById("m").style.background = "#FFFFFF";
+          document.getElementById("cu").style.background = "#FFFFFF";
         }
       });
     </script>
