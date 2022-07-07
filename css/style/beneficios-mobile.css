@@ -122,7 +122,6 @@ picture, img {
     padding: 24px 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     scroll-snap-type: x mandatory;
     overflow-y: hidden;
 }
@@ -133,7 +132,7 @@ input[type="radio"] {
 
 .filter__btn {
     padding: 24px;
-    margin: 0 2px;
+    margin: 0 4px;
     font-size: var(--md);
     font-weight: 600;
     border: none;

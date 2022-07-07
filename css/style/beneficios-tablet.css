@@ -30,6 +30,10 @@
     padding: 24px;
 }
 
+.filter__container--scroll {
+    justify-content: space-evenly;
+}
+
 .benefits__container {
     width: 80%;
     grid-template-columns: 1fr 1fr;
