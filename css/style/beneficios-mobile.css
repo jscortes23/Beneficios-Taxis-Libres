@@ -87,6 +87,7 @@ picture, img {
     width: 91%;
     margin-bottom: 18px;
     line-height: 2.6rem;
+    text-align: justify;
     letter-spacing: -0.1rem;
     word-break: break-word;
     color: var(--title-color);
