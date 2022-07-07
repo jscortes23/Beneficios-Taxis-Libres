@@ -183,6 +183,7 @@ input[type="radio"] {
     margin: 0 auto;
     object-fit: contain;
     margin-bottom: 20px;
+    aspect-ratio: 4/2;
 }
 
 .benefits__card__description {
